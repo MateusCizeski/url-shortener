@@ -13,7 +13,7 @@ namespace Infrastructure.EntitiesConfiguration
             builder.Property(x => x.OriginalUrl)
                 .IsRequired();
 
-            builder.Property(x => x.ShortinedUrl)
+            builder.Property(x => x.ShortenedUrl)
                 .IsRequired();
         }
     }

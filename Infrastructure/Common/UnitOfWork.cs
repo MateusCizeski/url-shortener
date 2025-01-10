@@ -1,4 +1,5 @@
 ﻿using Infrastructure.Common.Interfaces;
+using Infrastructure.Persistence;
 
 namespace Infrastructure.Common
 {

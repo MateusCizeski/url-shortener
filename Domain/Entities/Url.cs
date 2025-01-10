@@ -4,7 +4,7 @@ namespace Domain.Entities
 {
     public class Url : Entity
     {
-        public string  ShortinedUrl { get; private set; }
+        public string ShortenedUrl { get; private set; }
         public string OriginalUrl { get; private set; }
         public DateTime ExpirationDate { get; private set; }
 
@@ -15,7 +15,7 @@ namespace Domain.Entities
                 throw new ArgumentException("The provided URL is not valid.");
             }
 
-            ShortinedUrl = shortenedUrl;
+            ShortenedUrl = shortenedUrl;
             OriginalUrl = originalUrl;
             ExpirationDate = expirationDate;
         }
