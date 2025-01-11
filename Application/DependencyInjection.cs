@@ -7,13 +7,13 @@ namespace Application
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplication(this IServiceCollection service)
+        public static IServiceCollection AddApplication(this IServiceCollection services)
         {
-            service.AddScoped<IUrlService, UrlService>();
-            service.AddScoped<IRandomPathGenerator, RandomPathGenerator>();
-            service.AddScoped<ICleanUpService<Url>, ICleanUpService>();
+            services.AddScoped<IUrlService, UrlService>();
+            services.AddScoped<IRandomPathGenerator, RandomPathGenerator>();
+            services.AddScoped<ICleanUpService<Url>, UrlCleanUpService>();
 
-            return service;
+            return services;
         }
     }
 }

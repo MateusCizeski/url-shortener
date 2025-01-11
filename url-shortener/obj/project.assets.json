@@ -3869,6 +3869,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Application >= 1.0.0",
+      "Domain >= 1.0.0",
+      "Infrastructure >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 9.0.0",
@@ -3910,6 +3912,12 @@
           "projectReferences": {
             "C:\\Desenvolvimento\\url-shortener\\Application\\Application.csproj": {
               "projectPath": "C:\\Desenvolvimento\\url-shortener\\Application\\Application.csproj"
+            },
+            "C:\\Desenvolvimento\\url-shortener\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\url-shortener\\Domain\\Domain.csproj"
+            },
+            "C:\\Desenvolvimento\\url-shortener\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Desenvolvimento\\url-shortener\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

@@ -310,6 +310,12 @@
             "projectReferences": {
               "C:\\Desenvolvimento\\url-shortener\\Application\\Application.csproj": {
                 "projectPath": "C:\\Desenvolvimento\\url-shortener\\Application\\Application.csproj"
+              },
+              "C:\\Desenvolvimento\\url-shortener\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\url-shortener\\Domain\\Domain.csproj"
+              },
+              "C:\\Desenvolvimento\\url-shortener\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Desenvolvimento\\url-shortener\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
