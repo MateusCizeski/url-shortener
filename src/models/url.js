@@ -10,4 +10,5 @@ const schema = new mongoose.Schema({
 schema.index({ expireAt: 1 }, { expireAfterSeconds: 0 });
 
 const Url = mongoose.model('Url', schema);
+
 export default Url;
