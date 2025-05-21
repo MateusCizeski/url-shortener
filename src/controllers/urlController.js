@@ -11,7 +11,7 @@ export async function shortenUrl(req, res) {
 
     if(!originalUrl) return res.status(400).json({ error: 'URL é obrigatória' });
 
-    const shorCode = nanoid(6);
+    const shortCode = nanoid(6);
 
     const newUrl = await Url.create({
         originalUrl,
@@ -20,7 +20,7 @@ export async function shortenUrl(req, res) {
     });
 
     res.status(201).json({
-        shortUrl: `${BASE_URL}/${shorCode}`,
+        shortUrl: `${BASE_URL}/${shortCode}`,
         originalUrl,
     });
 }
@@ -28,6 +28,8 @@ export async function shortenUrl(req, res) {
 export async function redirectUrl(req, res) {
     const { shortCode } = req.params;
     const url = await Url.findOne({ shortCode });
+
+    console.log(url)
 
     if(!url) return res.status(404).json({ error: 'URL não encontrado.' });
 
